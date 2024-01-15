@@ -109,3 +109,70 @@ main {
 .hook span {
     color: hsl(277, 64%, 61%);
 }
+
+@media only screen and (max-width: 1109px) {
+    main {
+        font-size: .8rem;
+    }
+
+    p {
+        font-size: .57rem;
+    }
+}
+
+@media only screen and (max-width: 1084px) {
+    .hook {
+        padding-right: 7rem;
+    }
+}
+
+@media only screen and (max-width: 855px) {
+    .hook {
+        padding-right: 6rem;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+    .hook {
+        padding-right: 5rem;
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    .hook {
+        padding-right: 4rem;
+    }
+    .stats-items {
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (max-width: 689px) {
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+    .hook {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .card-image {
+        grid-area: 1 / 1 / 2 / 2;
+        background-image: url("./images/image-header-mobile.jpg");
+        width: 100%;
+        height: 480px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    
+}
