@@ -47,10 +47,31 @@ main {
     grid-area: 1 / 1 / 2 / 2;
     color: hsl(0, 0%, 100%);
     padding: 5rem;
+    padding-right: 10rem;
 }
 
 .hook p {
     color: hsla(0, 0%, 100%, 0.75);
+    font-size: .77rem;
+    line-height: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+.stats {
+    margin-top: 3rem;
+}
+
+.stats-items {
+    display: inline-block;
+}
+
+.stats-items:nth-child(1), 
+.stats-items:nth-child(2) {
+    margin-right: 1.5rem;
+}
+
+.stats-items:nth-child(3) {
+    text-transform: uppercase;
 }
 
 .stats h6 {
@@ -69,6 +90,20 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.card-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(277, 100%, 51%);
+    opacity: .6;
+    filter: brightness(.5);
+
 }
 
 .hook span {
